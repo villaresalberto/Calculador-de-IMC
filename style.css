@@ -1,0 +1,38 @@
+body{
+    background-image: url(img/1327263.png);
+    background-position: -500px 75px;
+    background-size: contain;
+    background-repeat: round;
+    background-attachment: fixed;
+    
+    
+}
+h1{
+    color: rgb(255, 255, 255);
+    background-color: gray;
+    border: 10px solid rgb(77, 73, 73);
+    border-radius: 100px;
+    margin-right: 1000px;
+    
+}
+img{
+    display: block;
+    margin: auto;
+}
+
+label{
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-position: -500px 100px; /* Ajusta la posición del fondo para móviles */
+        background-size: contain; /* Ajusta el tamaño del fondo para que cubra toda la pantalla */
+        background-attachment: fixed;
+        background-repeat: round;
+    }
+
+    h1 {
+        margin-right: 20px; /* Reduce el margen derecho para que el título se vea bien en pantallas pequeñas */
+        margin-left: 20px;  /* Asegura que haya un margen izquierdo para mantener el título centrado */
+    }
+}
