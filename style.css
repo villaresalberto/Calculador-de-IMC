@@ -23,9 +23,9 @@ img{
 label{
     color: white;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 550px) {
     body {
-        background-position: -650px 300px; /* Ajusta la posición del fondo para móviles */
+        background-position: -700px 300px; /* Ajusta la posición del fondo para móviles */
         background-size: cover; /* Ajusta el tamaño del fondo para que cubra toda la pantalla */
         background-attachment: fixed;
         background-repeat: inherit;
