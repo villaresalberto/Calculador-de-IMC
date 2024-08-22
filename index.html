@@ -7,6 +7,9 @@
     <title>Calculadora IMC</title>
 </head>
 <body>
+    <audio id="background-music" autoplay loop preload="auto" src="music/Hollow Knight OST - Enter Hallownest_243Uguc-6mQ.mp3" type="audio/mp3">
+
+    </audio>
     <h1>Calculadora de IMC</h1>
     <form action="">
 
@@ -23,6 +26,23 @@
     </form>
     <br>
     <img src="img/imc.jpg" alt="Gráfico del IMC">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('background-music');
+            // Intenta reproducir el audio cuando el documento esté completamente cargado
+            audio.play().catch(error => {
+                console.log('Error al reproducir el audio:', error);
+            });
+        });
+
+        // Intenta reproducir el audio cuando el usuario haga clic en cualquier parte
+        document.addEventListener('click', () => {
+            const audio = document.getElementById('background-music');
+            audio.play().catch(error => {
+                console.log('Error al reproducir el audio:', error);
+            });
+        });
+    </script>
     <script src="calculadora.js"></script>
 </body>
 </html>
